@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 
 const Diceroll = ({currentNum, setcurrentNum}) => {
 
@@ -17,6 +16,7 @@ const Diceroll = ({currentNum, setcurrentNum}) => {
             <p>Click on image to roll Dice</p>
         </div>
     )
+
 
 }
 

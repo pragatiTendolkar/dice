@@ -9,6 +9,9 @@ const Playgame = () => {
   const [select, setselect] = useState();
   const [currentNum, setcurrentNum] = useState(1);
 
+console.log("select" , select);
+console.log("currentNum" , currentNum);
+
   return (
     <>
       <div className="box play-box">
