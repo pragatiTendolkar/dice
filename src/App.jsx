@@ -4,7 +4,7 @@ import Playgame from './Components/Playgame'
 import Startgame from './Components/Startgame'
 
 function App() {
-  const [value, setValue] = useState(true);
+  const [value, setValue] = useState(false);
 
   function handleChange() {
     setValue(!value);
