@@ -10,15 +10,18 @@ const Playgame = () => {
   const [currentNum, setcurrentNum] = useState(1);
   const [score, setscore] = useState(0);
 
-
-
-  
+const [Error, setError] = useState(" ");
 
   const Rolldice = (min, max) => {
-
+   
     if (!select) {
-      return
+      setError("Select your number first");
+     return 
     }
+    
+  
+   
+
     const RandomNumber = Math.floor(Math.random() * (max - min) + min);
     setcurrentNum(RandomNumber);
 
@@ -28,7 +31,8 @@ const Playgame = () => {
     if (RandomNumber == select) {
 
       setscore(RandomNumber + score);
-      console.log(RandomNumber + "==" + select + "=" + RandomNumber)
+      console.log(RandomNumber + "==" + select + "=" + RandomNumber);
+      
     }
     else {
       setscore(score - 2);
@@ -51,7 +55,7 @@ const Playgame = () => {
         </div>
 
         <div className="num-select">
-          <Select select={select} setselect={setselect} />
+          <Select select={select} setselect={setselect} setError={setError}  Error = {Error} />
         </div>
 
         <Diceroll currentNum={currentNum} Rolldice={Rolldice} />
