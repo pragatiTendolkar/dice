@@ -12,6 +12,8 @@ const Playgame = () => {
 
 
 
+  
+
   const Rolldice = (min, max) => {
 
     if (!select) {
