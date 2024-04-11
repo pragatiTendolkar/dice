@@ -162,14 +162,34 @@ img{
 
 @media only screen and (max-width: 600px) {
 
-  .total-score, .num-select{
+  .total-score, .num-select, .start-row .col-1, .start-row .col{
     width: 100%;
+    height: fit-content;
     /* align-items: center; */
   }
-  
- 
-  
+  .row {
 
+    flex-direction: column;
+
+}
+
+.roll-box {
+  height: 50%;
+
+}
+
+.play-box {
+  gap: 40px;
+}
+ 
+.num-select {
+  justify-content: center;
+}
+  
+.num-select p {
+  text-align: center;
+
+}
 
 
 }

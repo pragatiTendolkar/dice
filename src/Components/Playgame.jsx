@@ -26,6 +26,7 @@ const [Error, setError] = useState(" ");
     setcurrentNum(RandomNumber);
 
 
+    
 
 
     if (RandomNumber == select) {
@@ -41,9 +42,13 @@ const [Error, setError] = useState(" ");
     setselect();
   }
 
+  const reset =() =>{
 
-  // console.log("select" , select);
-  // console.log("currentNum" , currentNum);
+    setselect();
+    setcurrentNum(1);
+    setscore(0);
+    
+  }
 
 
   return (
@@ -59,6 +64,8 @@ const [Error, setError] = useState(" ");
         </div>
 
         <Diceroll currentNum={currentNum} Rolldice={Rolldice} />
+
+        {/* <button className='black-btn' onClick={() => {reset}}>reset</button> */}
       </div>
     </>
   )
