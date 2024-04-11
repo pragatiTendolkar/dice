@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Startgame = ({ toggle }) => {
-  console.log(toggle);
+
   return (
     <>
       <div className="box">

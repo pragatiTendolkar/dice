@@ -5,7 +5,7 @@ const Select = ({select, setselect}) => {
 
     const Numbers = [1, 2, 3, 4, 5, 6];
 
-   console.log(select);
+//    console.log(select);
 
     return (
         <>
