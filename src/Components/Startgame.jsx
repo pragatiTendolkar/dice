@@ -1,6 +1,13 @@
 import React from 'react'
 
+
 const Startgame = ({ toggle }) => {
+
+  // const [audio] = useState(new Audio("./sound/button.mp3"));
+
+  // const playAudio = () => {
+  //   audio.play();
+  // };
 
   return (
     <>
@@ -12,6 +19,7 @@ const Startgame = ({ toggle }) => {
           <div className="col col-2">
             <h1>Start Game</h1>
             <button className='black-btn' onClick={toggle}>Play Game</button>
+            {/* <audio src="./sound/background.mp3" autoPlay loop />   */}
           </div>
         </div>  
       </div>

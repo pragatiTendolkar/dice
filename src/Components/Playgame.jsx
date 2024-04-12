@@ -4,6 +4,7 @@ import Diceroll from './Diceroll';
 import { useState } from 'react';
 
 
+
 const Playgame = () => {
 
   const [select, setselect] = useState();
@@ -44,6 +45,7 @@ const [Error, setError] = useState(" ");
 
   const reset =() =>{
 
+    console.log("reset");
     setselect();
     setcurrentNum(1);
     setscore(0);
@@ -65,7 +67,8 @@ const [Error, setError] = useState(" ");
 
         <Diceroll currentNum={currentNum} Rolldice={Rolldice} />
 
-        {/* <button className='black-btn' onClick={() => {reset}}>reset</button> */}
+        <button className='white-btn reset-btn' onClick={reset}>Reset Game</button>
+   {/* <audio src="./sound/background.mp3" autoPlay loop />         */}
       </div>
     </>
   )
