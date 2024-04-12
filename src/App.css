@@ -216,11 +216,12 @@ scale:0.95;
 
 .roll-box {
   height: 50%;
+  padding: 0;
 
 }
 
 .play-box {
-  gap: 40px;
+  gap: 25px;
 }
  
 .num-select {
