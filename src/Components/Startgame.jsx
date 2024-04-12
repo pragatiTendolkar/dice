@@ -17,7 +17,7 @@ const Startgame = ({ toggle }) => {
             <img src="./imgs/dice.png" alt="" />
           </div>
           <div className="col col-2">
-            <h1>Start Game</h1>
+            <h1>Dice Game</h1>
             <button className='black-btn' onClick={toggle}>Play Game</button>
             {/* <audio src="./sound/background.mp3" autoPlay loop />   */}
           </div>
